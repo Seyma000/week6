@@ -17,4 +17,6 @@ GROUP BY store_id;
 -- city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
 
 SELECT city, country_id, COUNT(city)  FROM city
-GROUP BY city, country_id;
+GROUP BY city, country_id
+ORDER BY count(city) DESC
+LIMIT 1;
