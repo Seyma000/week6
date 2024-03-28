@@ -13,20 +13,18 @@ public class FileReadingAndWriting {
             System.out.println(e.getMessage());
         }
     }
-
-    // ------------ Dosya Oluşturma(createFile) metodu ------------------------
+    //Dosya Oluşturma
     public static void createFile(String path) throws IOException{
-        // dizin belirtilerek 'Number.txt' dosyası oluşturuldu ve 'file' nesnesine atandı
         File file = new File(path);
-        // Belirtilen dizinde dosyanın oluşup oluşmadığı kontrol edildi.
+        // Dosyanın olup olmadığını kontrol et
         if (file.createNewFile()){
             System.out.println(file.getName() + " dosyası oluşturuldu");
         }else {
-            System.out.println(file.getName() + " dosyası zaten mevcut !");
+            System.out.println(file.getName() + " dosyası mevcut !");
         }
     }
 
-    // ------------ Dosyaya Yazma(fileWrite) metodu ------------------------
+    // Dosyaya Yazma
     public static void writeFile(String path) throws IOException{
         File file = new File(path);
 
@@ -36,8 +34,7 @@ public class FileReadingAndWriting {
         bufferedWriter.newLine();
         bufferedWriter.close();
     }
-
-    // ------------ Dosyayı Okuma(fileRead) metodu ------------------------
+    // Dosyayı Okuma
     public static void readFile(String path)throws IOException{
         File file = new File(path);
         FileReader fileReader = new FileReader(file);
@@ -49,7 +46,7 @@ public class FileReadingAndWriting {
             int number = Integer.parseInt(line);
             sum += number;
         }
-        System.out.println("Dosyadaki sayıların toplamı : " + sum);
+        System.out.println("Sayıların toplamı : " + sum);
         bufferedReader.close();
     }
 
