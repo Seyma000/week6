@@ -14,7 +14,7 @@ public class JDBC {
             String updateQuery1 = "INSERT INTO employees (name, position, salary) VALUES ('Şeyma' , 'CEO CoFounder' , 90000.00)";
             String updateQuery2 = "INSERT INTO employees (name, position, salary) VALUES ('Nida' , 'Backend Developer' , 1000.00)";
             String updateQuery3 = "INSERT INTO employees (name, position, salary) VALUES ('Abdulkerim' , 'FullBack Developer' , 1000.00)";
-            String updateQuery4 = "INSERT INTO employees (name, position, salary) VALUES ('Barış' , 'software' , 4500.000)";
+            String updateQuery4 = "INSERT INTO employees (name, position, salary) VALUES ('Barış' , 'Game Developer' , 5500.000)";
             String updateQuery5 = "INSERT INTO employees (name, position, salary) VALUES ('Göksu' , 'Software Developer' , 55000.000)";
 
 //            st.executeUpdate(updateQuery1);
