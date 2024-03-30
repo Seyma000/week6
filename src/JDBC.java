@@ -15,12 +15,13 @@ public class JDBC {
             String updateQuery2 = "INSERT INTO employees (name, position, salary) VALUES ('Nida' , 'Backend Developer' , 1000.00)";
             String updateQuery3 = "INSERT INTO employees (name, position, salary) VALUES ('Abdulkerim' , 'FullBack Developer' , 1000.00)";
             String updateQuery4 = "INSERT INTO employees (name, position, salary) VALUES ('Barış' , 'software' , 10.000)";
+            String updateQuery5 = "INSERT INTO employees (name, position, salary) VALUES ('Göksu' , 'Software Developer' , 50.000)";
 
 //            st.executeUpdate(updateQuery1);
 //            st.executeUpdate(updateQuery2);
 //            st.executeUpdate(updateQuery3);
 //            st.executeUpdate(updateQuery4);
-
+//            st.executeUpdate(updateQuery5);
 
             // Statement ile Delete İşlemi
             String deleteQuery = "DELETE FROM employees WHERE id BETWEEN 6 AND 9"  ;
